@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Separator, PanelHeader } from '@vkontakte/vkui';
 import StickerItem from './StickerItem';
-const urls = ["https://i.ibb.co/CJv3jC1/image.png", "https://i.ibb.co/wJ77hkk/01.png", "https://i.ibb.co/0QTGnvv/02.png", "https://i.ibb.co/021kcQR/03.png", "https://i.ibb.co/m9VgSM5/04.png", "https://i.ibb.co/HDJ4pGR/05.png"]
+const urls = ["https://i.ibb.co/CJv3jC1/image.png", "https://i.ibb.co/m9VgSM5/04.png", "https://i.ibb.co/wJ77hkk/01.png", "https://i.ibb.co/0QTGnvv/02.png", "https://i.ibb.co/021kcQR/03.png", "https://i.ibb.co/HDJ4pGR/05.png"]
 class Stories extends React.Component {
    
 	constructor(){
