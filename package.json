@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "",
-  "homepage": "https://psssum.github.io/vkminiappfinal/",
+  "homepage": "https://psssum.github.io/vkminiappfinal20/",
   "main": "index.js",
   "scripts": {
     "start": "cross-env PORT=10888 HTTPS=false react-scripts start",
