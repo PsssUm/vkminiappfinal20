@@ -66,7 +66,7 @@ class QRcods extends React.Component {
             <Separator />
             {this.state.history.length > 0 ? <div>
                 <p className="qr_count">Отсканировано: {this.state.history.length}</p>
-                {this.state.history.map((item, index) => (
+                {this.state.history.reverse().map((item, index) => (
                     <HistoryItem  index={index} history_item={item} key={index} />
                 ))}
             </div> :
