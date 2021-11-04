@@ -8,6 +8,7 @@ import qr_code_active from './img/qr_code_active.svg'
 import qr_code from './img/qr_code.svg'
 import history_active from './img/history_active.svg'
 import history from './img/history.svg'
+import Stories from './panels/Stories';
 class App extends React.Component {
    
 	constructor(){
@@ -69,10 +70,7 @@ class App extends React.Component {
 		  }>
 			<View id="histories" activePanel="histories">
 			  <Panel id="histories">
-				<PanelHeader>Истории</PanelHeader>
-				<Group style={{ height: '1000px' }}>
-				  
-				</Group>
+				<Stories/>
 			  </Panel>
 			</View>
 			<View id="scanner" activePanel="scanner">
