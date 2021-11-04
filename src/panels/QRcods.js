@@ -2,6 +2,7 @@ import React from 'react';
 import bridge from '@vkontakte/vk-bridge';
 import { Button, Separator, PanelHeader } from '@vkontakte/vkui';
 import HistoryItem from './HistoryItem';
+import empty_history from '../img/empty_history.svg'
 
 class QRcods extends React.Component {
    
@@ -9,7 +10,7 @@ class QRcods extends React.Component {
         super()
         this.state = {
             qrResult : undefined,
-            history : [{key : 0, value : "разрешение и доступ к фонарику мобильного телефона, на котором запущено приложение.saddsfaoisdjgifasjidgijsadgijasdg"}, {key : 0, value : "https://google.com/asdisajfsadifsadofjisadjifjisaodfjioasjdifjiaj"}]
+            history : []
         }
     }
     componentDidMount(){
@@ -63,11 +64,15 @@ class QRcods extends React.Component {
             </div>
             
             <Separator />
-            {this.state.history.length > 0 && <div>
+            {this.state.history.length > 0 ? <div>
                 <p className="qr_count">Отсканировано: {this.state.history.length}</p>
                 {this.state.history.map((item, index) => (
                     <HistoryItem  index={index} history_item={item} key={index} />
                 ))}
+            </div> :
+             <div className="empty_qr_cods">
+                    <img className="empty_qr_cods_icon center_horizontal" src={empty_history}/>
+                    <p className="empty_qr_cods_text center_horizontal">Здесь будет отображаться история сканирования QR-кодов</p>
             </div>}
 
         </div>

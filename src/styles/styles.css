@@ -130,3 +130,30 @@ input {
 .history_max_w{
     max-width: calc(100vw - 92px);
 }
+.empty_qr_cods{
+    position: relative;
+    margin-top: 56px;
+}
+.empty_qr_cods_icon{
+    margin-bottom: 16px;
+    width: 56px;
+    height: 56px;
+}
+.center_horizontal{
+    margin: 0;
+    position: relative;
+    left: 50%;
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+.empty_qr_cods_text{
+    font-size: 14px;
+    line-height: 18px;
+    /* or 129% */
+    text-align: center;
+    letter-spacing: 0.2px;
+
+    /* Light Text / Subhead */
+    color: #6D7885;
+    padding: 0 40px;
+}
